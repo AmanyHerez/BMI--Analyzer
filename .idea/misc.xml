@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/asus/StudioProjects/BMI_Analyzer/app/src/main/res/layout/login_secreen.xml" value="0.18" />
+        <entry key="..\:/Users/asus/StudioProjects/BMI_Analyzer/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/asus/StudioProjects/BMI_Analyzer/app/src/main/res/layout/activity_register_screen.xml" value="0.33" />
+        <entry key="..\:/Users/asus/StudioProjects/BMI_Analyzer/app/src/main/res/layout/login_secreen.xml" value="0.25" />
       </map>
     </option>
   </component>

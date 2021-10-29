@@ -27,11 +27,11 @@
         android:id="@+id/title_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome Back"
+        android:text="Create New Account"
         android:layout_marginTop="@android:dimen/app_icon_size"
         android:gravity="center"
         android:textColor="@android:color/holo_blue_dark"
-        android:textSize="48sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         />
 
@@ -39,7 +39,7 @@
         android:id="@+id/Sec_title_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="if you already have an account , login"
+        android:text="if you already have an account"
         android:textColor="@android:color/darker_gray"
         android:gravity="center"
         android:textSize="22sp"
@@ -54,15 +54,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100px"
-            android:hint="username"
+            android:hint="Name"
             android:minHeight="48dp"
             android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            tools:ignore="InvalidId" />
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50px"
+            android:layout_marginTop="10dp"
             android:hint="password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/re_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Re-Password"
             android:inputType="textPassword"
             android:minHeight="48dp" />
         <Button
@@ -71,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:background="@android:color/holo_blue_dark"
-            android:text="LOGIN"
+            android:text="CREATE"
             android:textColor="@android:color/white"
             android:textSize="26sp"
 
@@ -84,13 +102,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="You Don't Have An Account?"
+                android:text="You Have An Account?"
                 android:textColor="@color/black"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:text="sign up"
+                android:text="login"
                 android:textColor="@android:color/holo_blue_dark"/>
         </LinearLayout>
 
