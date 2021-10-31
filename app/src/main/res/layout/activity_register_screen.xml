@@ -56,7 +56,8 @@
             android:layout_marginTop="100px"
             android:hint="Name"
             android:minHeight="48dp"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:backgroundTint="@android:color/holo_blue_dark" />
 
         <EditText
             android:id="@+id/email"
@@ -66,13 +67,16 @@
             android:hint="E-mail"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            tools:ignore="InvalidId" />
+            tools:ignore="InvalidId"
+            android:backgroundTint="@android:color/holo_blue_dark" />
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="password"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
             android:inputType="textPassword"
             android:minHeight="48dp" />
         <EditText
@@ -82,7 +86,8 @@
             android:layout_marginTop="10dp"
             android:hint="Re-Password"
             android:inputType="textPassword"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:backgroundTint="@android:color/holo_blue_dark" />
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
