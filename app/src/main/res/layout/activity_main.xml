@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@android:color/holo_blue_dark">
+    android:background="@color/blue">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -30,7 +30,4 @@
         android:textSize="32dp"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
         />
-
-
-
 </RelativeLayout>

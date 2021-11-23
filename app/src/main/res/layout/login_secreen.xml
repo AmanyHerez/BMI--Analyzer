@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@color/blue"
             app:title="BMI Analyzer"
             app:titleTextColor="@color/white"
             app:titleMarginStart="150sp"
@@ -27,10 +27,10 @@
         android:id="@+id/title_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome Back"
+        android:text="@string/Welcome_Back"
         android:layout_marginTop="@android:dimen/app_icon_size"
         android:gravity="center"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/blue"
         android:textSize="48sp"
         android:textStyle="bold"
         />
@@ -39,8 +39,8 @@
         android:id="@+id/Sec_title_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="if you already have an account , login"
-        android:textColor="@android:color/darker_gray"
+        android:text="@string/sec_Welcome_Back"
+        android:textColor="@color/gray"
         android:gravity="center"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -54,27 +54,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100px"
-            android:hint="username"
+            android:hint="@string/username"
             android:minHeight="48dp"
             android:inputType="text"
-            android:backgroundTint="@android:color/holo_blue_dark" />
+            android:backgroundTint="@color/blue" />
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50px"
-            android:hint="password"
+            android:hint="@string/password"
             android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:backgroundTint="@android:color/holo_blue_dark" />
+            android:backgroundTint="@color/blue" />
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:background="@android:color/holo_blue_dark"
-            android:text="LOGIN"
+            android:background="@color/blue"
+            android:text="@string/login"
             android:textColor="@android:color/white"
             android:textSize="26sp"
 
@@ -87,23 +87,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="You Don't Have An Account?"
+                android:text="@string/You_Dont_Have_An_Account"
                 android:textColor="@color/black"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:text="sign up"
-                android:textColor="@android:color/holo_blue_dark"/>
+                android:text="@string/sign_up"
+                android:textColor="@color/blue"/>
         </LinearLayout>
-
-
     </LinearLayout>
-
-
-
-
-
-
-
 </LinearLayout>

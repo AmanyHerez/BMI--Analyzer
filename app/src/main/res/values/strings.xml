@@ -1,3 +1,38 @@
 <resources>
-    <string name="app_name">BMI_Analyzer</string>
+    <string name="app_name">BMI Analyzer</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="weight">Weight</string>
+    <string name="Length">Length</string>
+    <string name="data_of_birth">Data of Birth</string>
+    <string name="cm">cm</string>
+    <string name="Kg">Kg</string>
+    <string name="Create_New_Account">Create New Account</string>
+    <string name="Create_New_Account_sec">if you already have an account</string>
+    <string name="Name">Name</string>
+    <string name="password">password</string>
+    <string name="Email">E-mail</string>
+    <string name="Re_Password">Re-Password</string>
+    <string name="CREATE">CREATE</string>
+    <string name="You_Have_An_Account">You Have An Account?</string>
+    <string name="login">login</string>
+    <string name="Welcome_Back">Welcome Back</string>
+    <string name="sec_Welcome_Back">if you already have an account , login</string>
+    <string name="username">username</string>
+    <string name="You_Dont_Have_An_Account">You Don\'t Have An Account?</string>
+    <string name="sign_up">sign up</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </resources>
