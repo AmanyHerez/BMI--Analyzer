@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BMI_Analyzer">
         <activity
+            android:name=".new_record"
+            android:exported="true" />
+        <activity
             android:name=".Complete_Information"
             android:exported="true" />
         <activity

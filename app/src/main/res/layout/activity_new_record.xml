@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Complete_Information">
-
+    tools:context=".new_record">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -21,63 +20,21 @@
             app:titleTextColor="@color/white"
             ></androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
-
     <TextView
         android:id="@+id/title_complete_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@android:dimen/app_icon_size"
         android:gravity="center"
-        android:text="Complete Your Information"
+        android:text="@string/title_new_record"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="40sp"
         android:textStyle="bold" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="40dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="50dp"
-                android:text="@string/gender"
-                android:textColor="@color/blue"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:buttonTint="@color/blue"
-                android:text="@string/male"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:buttonTint="@color/blue"
-                android:text="@string/female"
-                android:textSize="18sp"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck" />
-
-        </LinearLayout>
-
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -88,7 +45,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="70dp"
+                android:layout_marginEnd="60dp"
                 android:text="@string/weight"
                 android:textColor="@color/blue"
                 android:textSize="25sp"
@@ -149,7 +106,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="70dp"
+                android:layout_marginEnd="60dp"
                 android:text="@string/Length"
                 android:textColor="@color/blue"
                 android:textSize="25sp"
@@ -199,7 +156,6 @@
                 android:textColor="@color/blue"
                 android:textStyle="bold"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -209,8 +165,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:text="@string/data_of_birth"
+                android:layout_marginEnd="85dp"
+                android:text="@string/data"
                 android:textColor="@color/blue"
                 android:textSize="25sp"
                 android:textStyle="bold"/>
@@ -219,11 +175,34 @@
                 android:layout_width="155dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/color_border"
-                android:textStyle="bold"
                 android:inputType="date"
+                android:textStyle="bold"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:inputType="time"
+                android:text="@string/time"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/color_border"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
         <Button
             android:id="@+id/save_data"
             android:layout_width="match_parent"
@@ -235,9 +214,8 @@
             android:textSize="26sp"
             android:textStyle="bold"
             tools:ignore="InvalidId" />
-
-
     </LinearLayout>
+
 
 
 </LinearLayout>

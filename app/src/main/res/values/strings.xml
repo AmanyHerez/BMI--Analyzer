@@ -22,17 +22,9 @@
     <string name="username">username</string>
     <string name="You_Dont_Have_An_Account">You Don\'t Have An Account?</string>
     <string name="sign_up">sign up</string>
-
-
-
-
-
-
-
-
-
-
-
+    <string name="title_new_record">New Record</string>
+    <string name="data">Data</string>
+    <string name="time">Time</string>
 
 
 </resources>
