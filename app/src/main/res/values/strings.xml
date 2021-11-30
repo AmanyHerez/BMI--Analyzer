@@ -25,6 +25,28 @@
     <string name="title_new_record">New Record</string>
     <string name="data">Data</string>
     <string name="time">Time</string>
+    <string name="title_food">Add Food Details</string>
+    <string name="name">Name</string>
+    <string name="category">Category</string>
+    <string name="calory">Calory</string>
+    <string name="photo">Photo</string>
+    <string name="Upload_Photo">Upload Photo</string>
+    <string name="save">Save</string>
+    <string name="cal_g">Cal/g</string>
+    <string name="save_data">Save Data</string>
+    <string name="hi">Hi,Mohammed</string>
+    <string name="current_status">Current Status</string>
+    <string name="old_status">Old Status</string>
+    <string name="add_food">Add food</string>
+    <string name="add_record">Add Record</string>
+    <string name="view_food">View Food</string>
+    <string name="logout">Logout</string>
+
+
+
+
+
+
 
 
 </resources>

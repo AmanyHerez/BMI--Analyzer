@@ -14,7 +14,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@color/blue"
             app:title="BMI Analyzer"
             app:titleMarginStart="150sp"
             app:titleTextColor="@color/white"
@@ -27,7 +27,7 @@
         android:layout_marginTop="@android:dimen/app_icon_size"
         android:gravity="center"
         android:text="@string/title_new_record"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/blue"
         android:textSize="40sp"
         android:textStyle="bold" />
     <LinearLayout
@@ -208,8 +208,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:background="@android:color/holo_blue_dark"
-            android:text="Save Data"
+            android:background="@color/blue"
+            android:text="@string/save_data"
             android:textColor="@android:color/white"
             android:textSize="26sp"
             android:textStyle="bold"
