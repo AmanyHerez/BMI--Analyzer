@@ -69,16 +69,23 @@
             android:minHeight="48dp"
             tools:ignore="InvalidId"
             android:backgroundTint="@color/blue" />
-        <EditText
-            android:id="@+id/password"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="password"
-            android:backgroundTint="@color/blue"
-            android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
-            android:inputType="textPassword"
-            android:minHeight="48dp" />
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <EditText
             android:id="@+id/re_password"
             android:layout_width="match_parent"

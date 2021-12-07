@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register_screen"
+    tools:context=".login_screen"
     android:orientation="vertical"
     >
     <com.google.android.material.appbar.AppBarLayout
@@ -58,16 +58,23 @@
             android:minHeight="48dp"
             android:inputType="text"
             android:backgroundTint="@color/blue" />
-        <EditText
-            android:id="@+id/password"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50px"
-            android:hint="@string/password"
-            android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:backgroundTint="@color/blue" />
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:backgroundTint="@color/blue"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
@@ -90,6 +97,7 @@
                 android:text="@string/You_Dont_Have_An_Account"
                 android:textColor="@color/black"/>
             <Button
+                android:id="@+id/sign_up"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
