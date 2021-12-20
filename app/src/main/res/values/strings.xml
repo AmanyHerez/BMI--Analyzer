@@ -42,6 +42,7 @@
     <string name="add_record">Add Record</string>
     <string name="view_food">View Food</string>
     <string name="logout">Logout</string>
+    <string name="Food_List">Food List</string>
 
 
 </resources>

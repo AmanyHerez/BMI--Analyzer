@@ -8,8 +8,7 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-
-public class MainActivity extends AppCompatActivity {
+public class FoodList extends AppCompatActivity {
     RecyclerView recycle_view_food;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         recycle_view_food.setLayoutManager(lm);
         recycle_view_food.setAdapter(adapter);
     }
-
 
 
 }

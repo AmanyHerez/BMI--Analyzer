@@ -152,7 +152,7 @@
                 android:background="@color/blue"
                 android:text="@string/Upload_Photo"
                 android:textColor="@android:color/white"
-                android:textSize="26sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 tools:ignore="InvalidId"
                 android:layout_marginEnd="40dp"
@@ -167,7 +167,7 @@
                 android:text="@string/save"
                 android:padding="8dp"
                 android:textColor="@android:color/white"
-                android:textSize="26sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 tools:ignore="InvalidId" />
         </LinearLayout>
