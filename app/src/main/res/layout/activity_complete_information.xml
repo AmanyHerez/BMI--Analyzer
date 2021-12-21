@@ -54,26 +54,42 @@
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/radio_Group"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:buttonTint="@color/blue"
-                android:text="@string/male"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:buttonTint="@color/blue"
+                    android:text="@string/male"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:buttonTint="@color/blue"
-                android:text="@string/female"
-                android:textSize="18sp"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck" />
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue"
+                    android:text="@string/female"
+                    android:textSize="18sp"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+            </RadioGroup>
+
+
+
 
         </LinearLayout>
 
@@ -95,7 +111,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/decrement2"
+                android:id="@+id/w_decrement"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/color_border"
@@ -106,8 +122,8 @@
                 android:textStyle="bold"
                 tools:ignore="DuplicateIds,TouchTargetSizeCheck" />
 
-            <TextView
-                android:id="@+id/display2"
+            <EditText
+                android:id="@+id/display_w_number"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/color_border"
@@ -118,7 +134,7 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Button
-                android:id="@+id/increment"
+                android:id="@+id/w_increment"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/color_border"
@@ -156,7 +172,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/decrement"
+                android:id="@+id/l_decrement"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/color_border"
@@ -167,8 +183,8 @@
                 android:textStyle="bold"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <TextView
-                android:id="@+id/display"
+            <EditText
+                android:id="@+id/display_l_number"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/color_border"
@@ -179,7 +195,7 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Button
-                android:id="@+id/increment2"
+                android:id="@+id/l_increment"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/color_border"
