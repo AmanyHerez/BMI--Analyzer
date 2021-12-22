@@ -8,28 +8,31 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class Complete_Information extends AppCompatActivity {
-    RadioButton Male, Female;
+    RadioGroup radioGroup;
     Button weight_increase,weight_decrease, length_increase, length_decrease;
     EditText w_number, l_number;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_information);
-        Male = findViewById(R.id.male);
-        Female = findViewById(R.id.female);
-
-
-        Male.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        radioGroup= findViewById(R.id.radio_Group);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean gender) {
-                if (gender)
-                    Toast.makeText(getBaseContext(), "Checked", Toast.LENGTH_LONG).show();
-                else
-                    Toast.makeText(getBaseContext(), "Un checked", Toast.LENGTH_LONG).show();
+            public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
+                switch (checkedId ){
+                    case R.id.male:
+                        Toast.makeText(Complete_Information.this, "male is selected", Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.female:
+                        Toast.makeText(Complete_Information.this, "female is selected", Toast.LENGTH_LONG).show();
+                        break;
+                }
             }
+
         });
         weight_increase = findViewById(R.id.w_increment);
         w_number = findViewById(R.id.display_w_number);

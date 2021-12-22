@@ -20,7 +20,14 @@
             android:exported="true" />
         <activity
             android:name=".splash"
-            android:exported="true" />
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".element_bmi_record"
             android:exported="true" />
@@ -37,14 +44,11 @@
             android:name=".register_screen"
             android:exported="true" />
         <activity
+            android:name=".login_screen"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
     </application>
 
 </manifest>

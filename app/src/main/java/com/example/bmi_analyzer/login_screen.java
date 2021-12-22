@@ -10,16 +10,32 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class login_screen extends AppCompatActivity {
     EditText username,password;
-    Button login,sign_up;
+    Button Login,Sign_up;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_secreen);
-        sign_up=(Button)findViewById(R.id.sign_up);
-        sign_up.setOnClickListener(new View.OnClickListener() {
+        Login=(Button)findViewById(R.id.login);
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(login_screen.this,home.class);
+                startActivity(i);
+            }
+        });
+        Sign_up=(Button)findViewById(R.id.sign_up);
+        Sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(login_screen.this,register_screen.class);
+                startActivity(i);
+            }
+        });
+        Login=(Button)findViewById(R.id.login);
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(login_screen.this,home.class);
                 startActivity(i);
             }
         });
